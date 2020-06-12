@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'CarController@index')->name('home');
+Route::get('/', 'CarController@index')->name('home')->middleware('auth');
 Route::get('/login', 'CarController@login');
 
 

@@ -31,15 +31,25 @@
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
+            
+            @if(Auth::guest())
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+              </li>
+            @endif
+
+            @if(!Auth::guest())
             <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
+              <a class="log-out-btn nav-link" href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout </a>
+              
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+              </form>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/register">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Logout{{Auth::logout()}}</a>
-            </li>
+            @endif
           </ul>
         </div>
       </nav>
