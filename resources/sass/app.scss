@@ -19,3 +19,15 @@
 #info-tick,#danger-tick,#success-tick{
     font-size: 13px;
 }
+
+.close:focus{
+    outline: none !important;
+}
+
+.modal-title{
+    color: white !important;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+}

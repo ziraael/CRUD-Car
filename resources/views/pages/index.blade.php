@@ -29,7 +29,7 @@
                                 <span class="input-group-text">Lloji</span>
                             </div>
 
-                            <input type="text" class="form-control" name="lloji" placeholder="Shtypni llojin">
+                            <input type="text" class="form-control" name="lloji" placeholder="Shtypni llojin" required>
                         </div>
 
                         <br>
@@ -39,7 +39,7 @@
                                 <span class="input-group-text">Ngjyra</span>
                             </div>
 
-                            <input type="text" class="form-control" name="ngjyra" placeholder="Shtypni ngjyren">
+                            <input type="text" class="form-control" name="ngjyra" placeholder="Shtypni ngjyren" required>
                         </div>
 
                         <br>
@@ -49,7 +49,7 @@
                                 <span class="input-group-text">Viti</span>
                             </div>
 
-                            <input type="number" class="form-control" name="viti" placeholder="Shtypni vitin">
+                            <input type="number" class="form-control" name="viti" placeholder="Shtypni vitin" required>
                         </div>
                         
                         <br>
@@ -59,7 +59,7 @@
                                 <span class="input-group-text">Te kaluara</span>
                             </div>
 
-                            <input type="number" class="form-control" name="kaluara" placeholder="Shtypni te kaluarat">
+                            <input type="number" class="form-control" name="kaluara" placeholder="Shtypni te kaluarat" required>
                         </div>
                         
                         <br>
@@ -70,9 +70,9 @@
                             </div>
 
                             <label class="mb-0 p-2" for="po_value">Po</label>
-                            <input type="radio" id="po_value" name="demtuar" value="Po">
+                            <input type="radio" id="po_value" name="demtuar" value="Po" required>
                             <label class="mb-0 p-2" for="jo_value">Jo</label>
-                            <input type="radio" id="jo_value" name="demtuar" value="Jo">
+                            <input type="radio" id="jo_value" name="demtuar" value="Jo" required>
                         </div>
                         
                         <br>
@@ -109,7 +109,7 @@
                                 <span class="input-group-text">Lloji</span>
                             </div>
 
-                            <input type="text" class="form-control" id="lloji" name="lloji" placeholder="Shtypni llojin">
+                            <input type="text" class="form-control" id="lloji" name="lloji" placeholder="Shtypni llojin" required>
                         </div>
 
                         <br>
@@ -119,7 +119,7 @@
                                 <span class="input-group-text">Ngjyra</span>
                             </div>
 
-                            <input type="text" class="form-control" id="ngjyra" name="ngjyra" placeholder="Shtypni ngjyren">
+                            <input type="text" class="form-control" id="ngjyra" name="ngjyra" placeholder="Shtypni ngjyren" required>
                         </div>
 
                         <br>
@@ -131,7 +131,7 @@
                                 <span class="input-group-text">Viti</span>
                             </div>
 
-                            <input type="number" class="form-control" id="viti" name="viti" placeholder="Shtypni vitin">
+                            <input type="number" class="form-control" id="viti" name="viti" placeholder="Shtypni vitin" required>
                         </div>
                         
                         <br>
@@ -141,7 +141,7 @@
                                 <span class="input-group-text">Te kaluara</span>
                             </div>
 
-                            <input type="number" class="form-control" id="kaluara" name="kaluara" placeholder="Shtypni te kaluarat">
+                            <input type="number" class="form-control" id="kaluara" name="kaluara" placeholder="Shtypni te kaluarat" required>
                         </div>
                         
                         <br>
@@ -152,9 +152,9 @@
                             </div>
 
                             <label class="mb-0 p-2" for="po_value">Po</label>
-                            <input type="radio" id="po_value" name="demtuar" value="Po">
+                            <input type="radio" id="po_value" name="demtuar" value="Po" required>
                             <label class="mb-0 p-2" for="jo_value">Jo</label>
-                            <input type="radio" id="jo_value" name="demtuar" value="Jo">
+                            <input type="radio" id="jo_value" name="demtuar" value="Jo" required>
                         </div>
                         
                         <br>
