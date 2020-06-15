@@ -55,9 +55,14 @@ class CarController extends Controller
         $car->viti = $request->input('viti');
         $car->kaluara = $request->input('kaluara');
         $car->demtuar = $request->input('demtuar');
-        $car->save();
-
-        return redirect('/')->with('success','U shtua vetura!');
+        
+        if($car->viti > 0 && $car->kaluara >= 0){
+            $car->save();
+            return redirect('/')->with('success','U shtua vetura!');
+        }
+        else{
+            return redirect('/')->with('error','Nuk u shtua vetura!');
+        }
     }
 
     /**
@@ -99,9 +104,14 @@ class CarController extends Controller
             'demtuar'=>$request->demtuar,
         );
 
-        Car::findOrfail($request->car_id)->update($car);
-
-        return redirect('/')->with('info','U editua vetura!');
+        
+        if($request->viti > 1940 && $request->kaluara >= 0){
+            Car::findOrfail($request->car_id)->update($car);
+            return redirect('/')->with('info','U editua vetura!');
+        }
+        else{
+            return redirect('/')->with('error','Nuk u editua vetura!');
+        }
     }
 
     /**

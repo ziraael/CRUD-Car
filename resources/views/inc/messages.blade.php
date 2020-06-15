@@ -23,6 +23,5 @@
 @if(session('error'))
         <div id="alertat" class="alert alert-danger">
             {{session('error')}}
-            <i id="danger-tick" class="fas fa-check fa-4x animated rotateIn"></i>
         </div>
 @endif

@@ -27,7 +27,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav align-items-center">
             <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
@@ -52,6 +52,9 @@
             @endif
           </ul>
         </div>
+        @if(!Auth::guest())
+        <p class="nav-link m-0">Pershendetje <strong>{{Auth::user()->name}}</strong></p>
+        @endif
       </nav>
       @yield('content')
 </body>
