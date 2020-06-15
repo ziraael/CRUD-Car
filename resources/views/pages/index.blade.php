@@ -6,7 +6,7 @@
     <h1 class="display-4 mt-4 mb-4">Car crud application</h1>
     <div class="row">
         <div class="col-md-12">
-            <a href="" id="shto-veture" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Shto nje veture</a>
+            <a href="" id="shto-veture" class="btn btn-success " data-toggle="modal" data-target="#exampleModalCenter">Shto nje veture</a>
                             
             <!-- Add Modal -->
             <div class="modal fade right" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
