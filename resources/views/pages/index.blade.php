@@ -322,7 +322,7 @@
                                     data-viti="{{$kerri->viti}}" 
                                     data-kaluara="{{$kerri->kaluara}}" 
                                     data-demtuar="{{$kerri->demtuar}}" 
-                                    data-toggle="modal" data-target="#exampleModalCenter2"><button class="btn btn-info btn-sm">Edit</button></a>
+                                    data-toggle="modal" data-target="#exampleModalCenter2"><button class="btn btn-info btn-sm">Edit </button></a>
 
                                     {{-- delete btn --}}
                                     <a data-car_id="{{$kerri->id}}"  data-toggle="modal" data-target="#exampleModalCenter3"><button class="btn btn-danger btn-sm">Delete</button></a>
